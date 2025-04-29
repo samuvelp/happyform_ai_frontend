@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "frontend/package.json",
+      "src": "package.json",
       "use": "@vercel/static-build",
       "config": { "distDir": "dist" }
     }
@@ -11,6 +11,6 @@
     { "src": "/(.*)", "dest": "/index.html" }
   ],
   "env": {
-    "VITE_API_URL": "https://your-backend-service-name.onrender.com"
+    "VITE_API_URL": "https://happyform-backend.onrender.com"
   }
 }
